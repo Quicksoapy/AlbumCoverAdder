@@ -8,8 +8,8 @@ string? directory = Console.ReadLine();
 
 LastFMCredentials credentials = new LastFMCredentials()
 {
-    APIKey = "APIKey",
-    SharedSecret = "SharedSecret"
+    APIKey = "a033dfb817a58a9e9ff37b463ddb7624",
+    SharedSecret = "8cfae5cc25c9b0295b405517746980c6"
 };
 
 LastFMStatsController lastFmStatsController = new LastFMStatsController(credentials);
@@ -41,6 +41,10 @@ foreach (var musicFile in musicFiles)
     mediaInfo.Format.Tags.TryGetValue("album", out var album);
     
     mediaInfo.Format.Tags.TryGetValue("album_artist", out var artist);
+    
+    mediaInfo.Format.Tags.TryGetValue("title", out var title);
+    
+    var formatName = mediaInfo.Format.FormatName;
 
     if (string.IsNullOrEmpty(artist))
     {
@@ -54,27 +58,23 @@ foreach (var musicFile in musicFiles)
         continue;
     }
 
-    if (timerElapsed == false)
-    { 
-        Thread.Sleep(1000);
-    }
+    var directoryFile = Directory.GetParent(musicFile);
     
-    var albumInfo = await lastFmStatsController.GetAlbumInfo(artist, album);
-
     try
     {
+        var albumInfo = await lastFmStatsController.GetAlbumInfo(artist, album);
         using (Process p = new Process())
         {
             p.StartInfo.UseShellExecute = false;
             p.StartInfo.CreateNoWindow = true;
             p.StartInfo.RedirectStandardOutput = true;
             p.StartInfo.FileName = "CMD.exe";
-            p.StartInfo.Arguments = "ffmpeg -i \""+ musicFile +"\" -i  \""+  albumInfo.Image.Uri.ToString() +"\" -map 0:a -map 1 -codec copy -metadata:s:v title=\"Album cover\" -metadata:s:v comment=\"Cover (front)\" -disposition:v attached_pic \"" + musicFile + "1" + "\"";
+            p.StartInfo.Arguments = "ffmpeg -i \""+ musicFile +"\" -i  \""+  albumInfo.Image.Uri.ToString() +"\" -map 0:a -map 1 -codec copy -metadata:s:v title=\"Album cover\" -metadata:s:v comment=\"Cover (front)\" -disposition:v attached_pic \"" + directoryFile + "\\" + title + " - " + artist + "." + formatName + "\" & exit /b";
             p.Start();
             p.WaitForExit();
         }
 
-        File.Delete(musicFile);
+        //File.Delete(musicFile);
     }
     catch (Exception e)
     {

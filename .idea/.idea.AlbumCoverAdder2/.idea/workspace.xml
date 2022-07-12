@@ -4,11 +4,31 @@
     <projectFile>AlbumCoverAdder2/AlbumCoverAdder2.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25388939-11dc-4d15-8252-db0b0f320e1a" name="Changes" comment="" />
+    <list default="true" id="25388939-11dc-4d15-8252-db0b0f320e1a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlbumCoverAdder2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlbumCoverAdder2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/AlbumCoverAdder2.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/AlbumCoverAdder2.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bcbb738dac7140a6b24256f9a9483d7af200/6b/abf6e67a/LastFMStatsController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/575c31ecc35a636b6f962cb71d53992552941a18982aae1c8e6c16305cc3761b/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -56,6 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657482802489</updated>
       <workItem from="1657482815909" duration="140000" />
+      <workItem from="1657609588419" duration="999000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1657482943512</created>

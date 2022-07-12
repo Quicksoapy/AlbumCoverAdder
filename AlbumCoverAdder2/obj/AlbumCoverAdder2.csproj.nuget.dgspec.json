@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gamin\\RiderProjects\\AlbumCoverAdder2\\AlbumCoverAdder2\\AlbumCoverAdder2.csproj": {}
+    "C:\\Users\\Gamin\\RiderProjects\\AlbumCoverAdder3\\AlbumCoverAdder2\\AlbumCoverAdder2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gamin\\RiderProjects\\AlbumCoverAdder2\\AlbumCoverAdder2\\AlbumCoverAdder2.csproj": {
+    "C:\\Users\\Gamin\\RiderProjects\\AlbumCoverAdder3\\AlbumCoverAdder2\\AlbumCoverAdder2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gamin\\RiderProjects\\AlbumCoverAdder2\\AlbumCoverAdder2\\AlbumCoverAdder2.csproj",
+        "projectUniqueName": "C:\\Users\\Gamin\\RiderProjects\\AlbumCoverAdder3\\AlbumCoverAdder2\\AlbumCoverAdder2.csproj",
         "projectName": "AlbumCoverAdder2",
-        "projectPath": "C:\\Users\\Gamin\\RiderProjects\\AlbumCoverAdder2\\AlbumCoverAdder2\\AlbumCoverAdder2.csproj",
+        "projectPath": "C:\\Users\\Gamin\\RiderProjects\\AlbumCoverAdder3\\AlbumCoverAdder2\\AlbumCoverAdder2.csproj",
         "packagesPath": "C:\\Users\\Gamin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gamin\\RiderProjects\\AlbumCoverAdder2\\AlbumCoverAdder2\\obj\\",
+        "outputPath": "C:\\Users\\Gamin\\RiderProjects\\AlbumCoverAdder3\\AlbumCoverAdder2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gamin\\AppData\\Roaming\\NuGet\\NuGet.Config"
