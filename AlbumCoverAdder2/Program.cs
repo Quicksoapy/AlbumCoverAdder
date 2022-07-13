@@ -11,8 +11,8 @@ DateTime oldTime = DateTime.UnixEpoch;
 
 LastFMCredentials credentials = new LastFMCredentials()
 {
-    APIKey = "a033dfb817a58a9e9ff37b463ddb7624",
-    SharedSecret = "8cfae5cc25c9b0295b405517746980c6"
+    APIKey = "last.fm API key",
+    SharedSecret = "last.fm Secret"
 };
 
 LastFMStatsController lastFmStatsController = new LastFMStatsController(credentials);
