@@ -2,6 +2,7 @@
 using System.Drawing;
 using FFMpegCore;
 using LastFM.AspNetCore.Stats;
+using LastFM.AspNetCore.Stats.Entities;
 using LastFM.AspNetCore.Stats.Utils;
 
 string? directory = Console.ReadLine();
@@ -14,12 +15,6 @@ LastFMCredentials credentials = new LastFMCredentials()
 
 LastFMStatsController lastFmStatsController = new LastFMStatsController(credentials);
 
-bool timerElapsed = false;
-
-var timer = new System.Timers.Timer(1000);
-
-timer.Elapsed += TimerElapsedEvent;
-
 GlobalFFOptions.Current.Encoding = System.Text.Encoding.UTF8;
 
 
@@ -30,7 +25,6 @@ string[] musicFiles = Directory.GetFiles(directory, "*.*", SearchOption.AllDirec
 
 foreach (var musicFile in musicFiles)
 {
-    timer.Enabled = true;
     var mediaInfo = await FFProbe.AnalyseAsync(musicFile);
 
     if (mediaInfo.VideoStreams.Count > 0)
@@ -40,16 +34,23 @@ foreach (var musicFile in musicFiles)
     
     mediaInfo.Format.Tags.TryGetValue("album", out var album);
     
-    mediaInfo.Format.Tags.TryGetValue("album_artist", out var artist);
+    mediaInfo.Format.Tags.TryGetValue("album_artist", out var albumArtist);
+
+    mediaInfo.Format.Tags.TryGetValue("artist", out var artist);
     
     mediaInfo.Format.Tags.TryGetValue("title", out var title);
     
     var formatName = mediaInfo.Format.FormatName;
 
-    if (string.IsNullOrEmpty(artist))
+    if (string.IsNullOrEmpty(albumArtist))
     {
-        Console.WriteLine("File: " + musicFile + " does not have an album artist applied in the metadata of the file.");
-        continue;
+        Console.WriteLine("File: " + musicFile + " does not have an album artist applied in the metadata of the file. Trying to use artist instead...");
+        
+        if (string.IsNullOrEmpty(artist))
+        {
+            Console.WriteLine("File: " + musicFile + " does not have artist in metadata either. skipping"); 
+            continue;
+        }
     }
     
     if (string.IsNullOrEmpty(album))
@@ -58,35 +59,47 @@ foreach (var musicFile in musicFiles)
         continue;
     }
 
+    
+
     var directoryFile = Directory.GetParent(musicFile);
     
     try
     {
-        var albumInfo = await lastFmStatsController.GetAlbumInfo(artist, album);
+        Album albumInfo; 
+        if (string.IsNullOrEmpty(albumArtist))
+        {
+            albumInfo = await lastFmStatsController.GetAlbumInfo(artist, album);
+        }
+        else
+        {
+            albumInfo = await lastFmStatsController.GetAlbumInfo(albumArtist, album);
+        }
+
+        if (albumInfo.Image.Uri == null)
+        {
+            Console.WriteLine("File: " + musicFile + " have not found album cover. The metadata is wrong or last.fm does not have a cover for that album.");
+            continue;
+        }
+        
         using (Process p = new Process())
         {
             p.StartInfo.UseShellExecute = false;
             p.StartInfo.CreateNoWindow = true;
             p.StartInfo.RedirectStandardOutput = true;
-            p.StartInfo.FileName = "CMD.exe";
-            p.StartInfo.Arguments = "ffmpeg -i \""+ musicFile +"\" -i  \""+  albumInfo.Image.Uri.ToString() +"\" -map 0:a -map 1 -codec copy -metadata:s:v title=\"Album cover\" -metadata:s:v comment=\"Cover (front)\" -disposition:v attached_pic \"" + directoryFile + "\\" + title + " - " + artist + "." + formatName + "\" & exit /b";
+            p.StartInfo.FileName = "ffmpeg.exe";
+            p.StartInfo.Arguments = "-i \""+ musicFile +"\" -i  \""+  albumInfo.Image.Uri.ToString() +"\" -map 0:a -map 1 -codec copy -metadata:s:v title=\"Album cover\" -metadata:s:v comment=\"Cover (front)\" -disposition:v attached_pic \"" + directoryFile + "\\" + title + " - " + albumArtist + "." + formatName + "\"";
             p.Start();
             p.WaitForExit();
         }
-
-        //File.Delete(musicFile);
+        
+        File.Delete(musicFile);
     }
     catch (Exception e)
     {
         Console.WriteLine("Album image has probably not been found cuz probably the metadata is incorrect \n\n" + e);
-        throw;
+        continue;
     }
     
-}
-
-void TimerElapsedEvent(Object source, System.Timers.ElapsedEventArgs e)
-{
-    timerElapsed = true;
 }
 
 System.Drawing.Image DownloadImageFromUrl(string imageUrl)

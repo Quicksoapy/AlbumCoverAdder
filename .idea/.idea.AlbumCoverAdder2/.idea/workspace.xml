@@ -9,17 +9,8 @@
       <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/AlbumCoverAdder2.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/AlbumCoverAdder2.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +20,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bcbb738dac7140a6b24256f9a9483d7af200/6b/abf6e67a/LastFMStatsController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/575c31ecc35a636b6f962cb71d53992552941a18982aae1c8e6c16305cc3761b/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f4708639776589f5ac2739f6fcbfc67343b1f9dac51cc1dbfdb003eef77cc1c/Monitor.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -77,6 +69,8 @@
       <updated>1657482802489</updated>
       <workItem from="1657482815909" duration="140000" />
       <workItem from="1657609588419" duration="999000" />
+      <workItem from="1657610658277" duration="99000" />
+      <workItem from="1657715521308" duration="2542000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1657482943512</created>
@@ -85,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657482943512</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="to fix:&#10;ffprobe closes before finishing task">
+      <created>1657610750613</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1657610750613</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +108,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="to fix:&#10;ffprobe closes before finishing task" />
+    <option name="LAST_COMMIT_MESSAGE" value="to fix:&#10;ffprobe closes before finishing task" />
   </component>
 </project>
