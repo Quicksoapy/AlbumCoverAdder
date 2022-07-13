@@ -7,6 +7,8 @@ using LastFM.AspNetCore.Stats.Utils;
 
 string? directory = Console.ReadLine();
 
+DateTime oldTime = DateTime.UnixEpoch;
+
 LastFMCredentials credentials = new LastFMCredentials()
 {
     APIKey = "a033dfb817a58a9e9ff37b463ddb7624",
@@ -65,7 +67,13 @@ foreach (var musicFile in musicFiles)
     
     try
     {
-        Album albumInfo; 
+        Album albumInfo;
+
+        if (oldTime.AddSeconds(1) < DateTime.UnixEpoch)
+        {
+            Thread.Sleep(oldTime.AddSeconds(1) - oldTime);
+        }
+        
         if (string.IsNullOrEmpty(albumArtist))
         {
             albumInfo = await lastFmStatsController.GetAlbumInfo(artist, album);
@@ -74,7 +82,8 @@ foreach (var musicFile in musicFiles)
         {
             albumInfo = await lastFmStatsController.GetAlbumInfo(albumArtist, album);
         }
-
+        oldTime = DateTime.UnixEpoch;
+        
         if (albumInfo.Image.Uri == null)
         {
             Console.WriteLine("File: " + musicFile + " have not found album cover. The metadata is wrong or last.fm does not have a cover for that album.");
@@ -100,30 +109,4 @@ foreach (var musicFile in musicFiles)
         continue;
     }
     
-}
-
-System.Drawing.Image DownloadImageFromUrl(string imageUrl)
-{
-    System.Drawing.Image image = null;
-     
-    try
-    {
-        System.Net.HttpWebRequest webRequest = (System.Net.HttpWebRequest)System.Net.HttpWebRequest.Create(imageUrl);
-        webRequest.AllowWriteStreamBuffering = true;
-        webRequest.Timeout = 30000;
-     
-        System.Net.WebResponse webResponse = webRequest.GetResponse();
-     
-        System.IO.Stream stream = webResponse.GetResponseStream();
-     
-        image = System.Drawing.Image.FromStream(stream);
-     
-        webResponse.Close();
-    }
-    catch (Exception ex)
-    {
-        return null;
-    }
-     
-    return image;
 }

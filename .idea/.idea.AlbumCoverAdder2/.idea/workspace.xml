@@ -4,13 +4,8 @@
     <projectFile>AlbumCoverAdder2/AlbumCoverAdder2.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25388939-11dc-4d15-8252-db0b0f320e1a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlbumCoverAdder2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlbumCoverAdder2/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="25388939-11dc-4d15-8252-db0b0f320e1a" name="Changes" comment="pretty much done, just gotta add a timer so it only requests last.fm api once per second max">
       <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +65,7 @@
       <workItem from="1657482815909" duration="140000" />
       <workItem from="1657609588419" duration="999000" />
       <workItem from="1657610658277" duration="99000" />
-      <workItem from="1657715521308" duration="2542000" />
+      <workItem from="1657715521308" duration="5702000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1657482943512</created>
@@ -86,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657610750613</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="pretty much done, just gotta add a timer so it only requests last.fm api once per second max">
+      <created>1657720638932</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657720638932</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +111,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="to fix:&#10;ffprobe closes before finishing task" />
-    <option name="LAST_COMMIT_MESSAGE" value="to fix:&#10;ffprobe closes before finishing task" />
+    <MESSAGE value="pretty much done, just gotta add a timer so it only requests last.fm api once per second max" />
+    <option name="LAST_COMMIT_MESSAGE" value="pretty much done, just gotta add a timer so it only requests last.fm api once per second max" />
   </component>
 </project>
