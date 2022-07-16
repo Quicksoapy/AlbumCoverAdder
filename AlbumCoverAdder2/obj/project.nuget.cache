@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ukTosWLwfL2RUIKXKLKrzfmcDlYoVfdThM0zJ1DlSZKRB8v+XKBYIaoJz+5OKUBN5QlUyOaFabKnZ71TCzTbCg==",
+  "dgSpecHash": "6X1gKoXjyxRMy0ACeLxD5jHPppWRc5u265XOTb9D2ncoBUfh4xnzzxMD+pXLCpqzkUZrZAJCwSv71SisIXb7ig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gamin\\RiderProjects\\AlbumCoverAdder3\\AlbumCoverAdder2\\AlbumCoverAdder2.csproj",
+  "projectFilePath": "C:\\Users\\Gamin\\RiderProjects\\AlbumCoverAdder\\AlbumCoverAdder2\\AlbumCoverAdder2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gamin\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Gamin\\.nuget\\packages\\ffmpegcore\\4.8.0\\ffmpegcore.4.8.0.nupkg.sha512",

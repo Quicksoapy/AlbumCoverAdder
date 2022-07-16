@@ -1,18 +1,19 @@
 ﻿using System.Diagnostics;
-using System.Drawing;
 using FFMpegCore;
 using LastFM.AspNetCore.Stats;
 using LastFM.AspNetCore.Stats.Entities;
 using LastFM.AspNetCore.Stats.Utils;
 
 string? directory = Console.ReadLine();
+string? apiKey = Console.ReadLine();
+string? sharedSecret = Console.ReadLine();
 
 DateTime oldTime = DateTime.UnixEpoch;
 
 LastFMCredentials credentials = new LastFMCredentials()
 {
-    APIKey = "last.fm API key",
-    SharedSecret = "last.fm Secret"
+    APIKey = apiKey,
+    SharedSecret = sharedSecret
 };
 
 LastFMStatsController lastFmStatsController = new LastFMStatsController(credentials);
