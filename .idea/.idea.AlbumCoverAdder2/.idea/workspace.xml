@@ -4,16 +4,18 @@
     <projectFile>AlbumCoverAdder2/AlbumCoverAdder2.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25388939-11dc-4d15-8252-db0b0f320e1a" name="Changes" comment="requests api key and secret at boot now">
+    <list default="true" id="25388939-11dc-4d15-8252-db0b0f320e1a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlbumCoverAdder2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlbumCoverAdder2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/AlbumCoverAdder2.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/AlbumCoverAdder2.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +40,15 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Publish to folder.Publish AlbumCoverAdder2 to folder (1)">
+    <configuration name="Publish AlbumCoverAdder2 to folder (1)" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="win-x64" target_folder="$PROJECT_DIR$/AlbumCoverAdder2/bin/Release/net6.0/win-x64/publish" target_framework="net6.0" uuid_high="-8907112872193339776" uuid_low="-7373902359176859642" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish AlbumCoverAdder2 to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="win-x64" target_folder="$PROJECT_DIR$/AlbumCoverAdder2/bin/Release/net6.0/win-x64/publish" target_framework="net6.0" uuid_high="-8907112872193339776" uuid_low="-7373902359176859642" />
+      <method v="2" />
+    </configuration>
     <configuration name="AlbumCoverAdder2" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -70,7 +80,8 @@
       <workItem from="1657609588419" duration="999000" />
       <workItem from="1657610658277" duration="99000" />
       <workItem from="1657715521308" duration="5702000" />
-      <workItem from="1657977313505" duration="824000" />
+      <workItem from="1657977313505" duration="904000" />
+      <workItem from="1657979021852" duration="2623000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1657482943512</created>
@@ -93,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657720638932</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="requests api key and secret at boot now">
+      <created>1657978664436</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657978664436</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

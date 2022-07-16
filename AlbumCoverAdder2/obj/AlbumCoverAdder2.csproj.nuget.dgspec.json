@@ -64,6 +64,11 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Users\\Gamin\\.dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
       }
     }
   }

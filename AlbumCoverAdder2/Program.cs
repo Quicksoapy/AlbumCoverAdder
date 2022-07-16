@@ -4,9 +4,14 @@ using LastFM.AspNetCore.Stats;
 using LastFM.AspNetCore.Stats.Entities;
 using LastFM.AspNetCore.Stats.Utils;
 
+Console.WriteLine("directory:");
 string? directory = Console.ReadLine();
+Console.WriteLine("Api key:");
 string? apiKey = Console.ReadLine();
+Console.WriteLine("Shared secret:");
 string? sharedSecret = Console.ReadLine();
+Console.WriteLine("0 for making a new directory and keeping old one, 1 for overwriting current directory (backup before continuing recommended)");
+bool? overwriteBool = Convert.ToBoolean(Convert.ToInt16(Console.ReadLine()) );
 
 DateTime oldTime = DateTime.UnixEpoch;
 
@@ -91,23 +96,37 @@ foreach (var musicFile in musicFiles)
             continue;
         }
         
+        //i couldn't think of a better way to do this lmao
+        string stupidString = "";
+        if (overwriteBool == false)
+        {
+            stupidString = "ACA";
+        }
+
+        if (!Directory.Exists(directoryFile + stupidString))
+        {
+            Directory.CreateDirectory(directoryFile + stupidString);
+        }
         using (Process p = new Process())
         {
             p.StartInfo.UseShellExecute = false;
             p.StartInfo.CreateNoWindow = true;
             p.StartInfo.RedirectStandardOutput = true;
             p.StartInfo.FileName = "ffmpeg.exe";
-            p.StartInfo.Arguments = "-i \""+ musicFile +"\" -i  \""+  albumInfo.Image.Uri.ToString() +"\" -map 0:a -map 1 -codec copy -metadata:s:v title=\"Album cover\" -metadata:s:v comment=\"Cover (front)\" -disposition:v attached_pic \"" + directoryFile + "\\" + title + " - " + albumArtist + "." + formatName + "\"";
+            p.StartInfo.Arguments = "-i \""+ musicFile +"\" -i  \""+  albumInfo.Image.Uri.ToString() +"\" -map 0:a -map 1 -codec copy -metadata:s:v title=\"Album cover\" -metadata:s:v comment=\"Cover (front)\" -disposition:v attached_pic \"" + directoryFile + stupidString + "\\" + title + " - " + albumArtist + "." + formatName + "\"";
             p.Start();
             p.WaitForExit();
         }
-        
-        File.Delete(musicFile);
+
+        if (overwriteBool == true)
+        {
+            File.Delete(musicFile);   
+        }
     }
+    
     catch (Exception e)
     {
         Console.WriteLine("Album image has probably not been found cuz probably the metadata is incorrect \n\n" + e);
-        continue;
     }
     
 }
