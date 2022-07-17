@@ -6,6 +6,10 @@ using LastFM.AspNetCore.Stats.Utils;
 
 Console.WriteLine("directory:");
 string? directory = Console.ReadLine();
+if (directory.EndsWith("/") || directory.EndsWith("\\"))
+{
+    directory.Remove(directory.Length);
+}
 Console.WriteLine("Api key:");
 string? apiKey = Console.ReadLine();
 Console.WriteLine("Shared secret:");
@@ -33,11 +37,12 @@ string[] musicFiles = Directory.GetFiles(directory, "*.*", SearchOption.AllDirec
 
 foreach (var musicFile in musicFiles)
 {
+    Console.WriteLine(musicFile);
     var mediaInfo = await FFProbe.AnalyseAsync(musicFile);
 
     if (mediaInfo.VideoStreams.Count > 0)
     {
-        continue;
+        continue; 
     }
     
     mediaInfo.Format.Tags.TryGetValue("album", out var album);
@@ -97,23 +102,38 @@ foreach (var musicFile in musicFiles)
         }
         
         //i couldn't think of a better way to do this lmao
-        string stupidString = "";
         if (overwriteBool == false)
         {
-            stupidString = "ACA";
+            string directoryFileACA = directoryFile.FullName.Insert(directory.Length, "ACA");
+            
+            if (overwriteBool == false)
+            {
+                if (!Directory.Exists(directoryFileACA))
+                {
+                    Directory.CreateDirectory(directoryFileACA);
+                }
+            }
+            using (Process p = new Process())
+            {
+                p.StartInfo.UseShellExecute = false;
+                p.StartInfo.CreateNoWindow = true;
+                p.StartInfo.RedirectStandardOutput = true;
+                p.StartInfo.FileName = "ffmpeg.exe";
+                p.StartInfo.Arguments = "-y -i \""+ musicFile +"\" -i  \""+  albumInfo.Image.Uri.ToString() +"\" -map 0:a -map 1 -codec copy -metadata:s:v title=\"Album cover\" -metadata:s:v comment=\"Cover (front)\" -disposition:v attached_pic \"" + directoryFileACA + "\\" + title + " - " + albumArtist + "." + formatName + "\"";
+                p.Start();
+                p.WaitForExit();
+            }
+            Console.WriteLine(musicFile + " done");
+            continue;
         }
-
-        if (!Directory.Exists(directoryFile + stupidString))
-        {
-            Directory.CreateDirectory(directoryFile + stupidString);
-        }
+        
         using (Process p = new Process())
         {
             p.StartInfo.UseShellExecute = false;
             p.StartInfo.CreateNoWindow = true;
             p.StartInfo.RedirectStandardOutput = true;
             p.StartInfo.FileName = "ffmpeg.exe";
-            p.StartInfo.Arguments = "-i \""+ musicFile +"\" -i  \""+  albumInfo.Image.Uri.ToString() +"\" -map 0:a -map 1 -codec copy -metadata:s:v title=\"Album cover\" -metadata:s:v comment=\"Cover (front)\" -disposition:v attached_pic \"" + directoryFile + stupidString + "\\" + title + " - " + albumArtist + "." + formatName + "\"";
+            p.StartInfo.Arguments = "-i \""+ musicFile +"\" -i  \""+  albumInfo.Image.Uri.ToString() +"\" -map 0:a -map 1 -codec copy -metadata:s:v title=\"Album cover\" -metadata:s:v comment=\"Cover (front)\" -disposition:v attached_pic \"" + directoryFile + "\\" + title + " - " + albumArtist + "." + formatName + "\"";
             p.Start();
             p.WaitForExit();
         }

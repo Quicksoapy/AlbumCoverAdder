@@ -8,20 +8,22 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlbumCoverAdder2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlbumCoverAdder2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/bin/Debug/net6.0/AlbumCoverAdder2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/AlbumCoverAdder2.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/AlbumCoverAdder2.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/AlbumCoverAdder2.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/AlbumCoverAdder2.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/AlbumCoverAdder2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlbumCoverAdder2/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AlbumCoverAdder2/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/575c31ecc35a636b6f962cb71d53992552941a18982aae1c8e6c16305cc3761b/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,7 +42,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Publish to folder.Publish AlbumCoverAdder2 to folder (1)">
+  <component name="RunManager" selected=".NET Project.AlbumCoverAdder2">
     <configuration name="Publish AlbumCoverAdder2 to folder (1)" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="win-x64" target_folder="$PROJECT_DIR$/AlbumCoverAdder2/bin/Release/net6.0/win-x64/publish" target_framework="net6.0" uuid_high="-8907112872193339776" uuid_low="-7373902359176859642" />
       <method v="2" />
@@ -81,7 +83,11 @@
       <workItem from="1657610658277" duration="99000" />
       <workItem from="1657715521308" duration="5702000" />
       <workItem from="1657977313505" duration="904000" />
-      <workItem from="1657979021852" duration="2623000" />
+      <workItem from="1657979021852" duration="2771000" />
+      <workItem from="1657981983737" duration="2282000" />
+      <workItem from="1657998319913" duration="387000" />
+      <workItem from="1658032475376" duration="601000" />
+      <workItem from="1658034211851" duration="4827000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1657482943512</created>
@@ -111,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657978664436</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add option to let old files be, add new files to new directory">
+      <created>1657981806150</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657981806150</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +149,7 @@
     <MESSAGE value="to fix:&#10;ffprobe closes before finishing task" />
     <MESSAGE value="pretty much done, just gotta add a timer so it only requests last.fm api once per second max" />
     <MESSAGE value="requests api key and secret at boot now" />
-    <option name="LAST_COMMIT_MESSAGE" value="requests api key and secret at boot now" />
+    <MESSAGE value="Add option to let old files be, add new files to new directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add option to let old files be, add new files to new directory" />
   </component>
 </project>
